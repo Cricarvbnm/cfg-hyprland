@@ -1,0 +1,12 @@
+exec-once = waybar-top
+exec-once = waybar-bot
+exec-once = clash-verge
+exec-once = fcitx5 --replace -d
+exec-once = hypridle
+exec-once = hyprpaper
+exec-once = systemctl --user start hyprpolkitagent
+exec-once = copyq --start-server
+exec-once = nm-applet
+
+# privacy desktop
+exec-once = $scriptDir/privacy-desktop 1
