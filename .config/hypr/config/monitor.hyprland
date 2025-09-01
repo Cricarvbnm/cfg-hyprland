@@ -1,5 +1,6 @@
 monitor=,preferred,auto,1.6
-source = $configDir/monitor/HDMI-A-1.hyprland
+
+source = $configDir/monitor/*
 
 # toolkit-specific scale
 env = GDK_SCALE,2
