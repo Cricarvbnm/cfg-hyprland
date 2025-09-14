@@ -1,3 +1,2 @@
-gestures {
-    workspace_swipe = true
-}
+gesture = 3, left, workspace, e-1
+gesture = 3, right, workspace, e+1

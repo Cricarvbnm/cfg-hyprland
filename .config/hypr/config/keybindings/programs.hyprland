@@ -4,7 +4,8 @@ bind = $mainMod, return, exec, $terminal
 bind = $mainMod, E, exec, $fileManager
 bind = $mainMod SHIFT, E, exec, $fileManager '$HOME/Desktop'
 bind = $mainMod, B, exec, $browser
-bind = $mainMod, R, exec, $menu
+bind = $mainMod, R, exec, wofi --show drun --insensitive --matching=fuzzy
+bind = $mainMod ALT, R, exec, wofi --show run --insensitive --matching=fuzzy
 bind = $mainMod, T, exec, $torrent
 bind = , print, exec, $hyprshot -m output
 bind = $mainMod, print, exec, $hyprshot -m region

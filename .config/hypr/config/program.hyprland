@@ -1,5 +1,4 @@
 $terminal = kitty
 $fileManager = thunar
-$menu = wofi --show drun --insensitive
 $browser = firefox
 $torrent = qbittorrent
