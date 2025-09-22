@@ -1,0 +1,2 @@
+# Xdg menu
+env = XDG_MENU_PREFIX,plasma-
