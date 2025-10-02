@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+AUTOSTART_DIR="$HOME/.config/autostart"
+
+for file in "$AUTOSTART_DIR"/*.desktop; do
+  gio launch "$file"
+done
