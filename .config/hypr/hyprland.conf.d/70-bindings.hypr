@@ -37,6 +37,9 @@ bind = SUPER, 9, workspace, 9
 bind = SUPER ALT, Z, togglespecialworkspace, magic
 bind = SUPER, 0, workspace, emptym
 
+bind = SUPER + CTRL, LEFT, workspace, m-1
+bind = SUPER + CTRL, RIGHT, workspace, m+1
+
 bind = SUPER SHIFT, 1, movetoworkspace, 1
 bind = SUPER SHIFT, 2, movetoworkspace, 2
 bind = SUPER SHIFT, 3, movetoworkspace, 3

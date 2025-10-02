@@ -1,0 +1,9 @@
+exec-once = $scriptDir/autostart-programs
+
+exec-once = hyprpaper
+exec-once = hypridle
+exec-once = fcitx5 --replace -d
+exec-once = systemctl --user start hyprpolkitagent
+
+# privacy desktop
+exec-once = $scriptDir/privacy-desktop 1
