@@ -1,4 +1,5 @@
-bind = CTRL + ALT, delete, exit,
+bind = CTRL ALT, delete, exit,
+bind = SUPER ALT, delete, exec, reboot
 bind = SUPER, semicolon, exec, hyprlock
 
 # Window
@@ -23,6 +24,9 @@ bind = SUPER SHIFT, K, movewindow, u
 bind = SUPER SHIFT, J, movewindow, d
 bindm = SUPER, mouse:272, movewindow
 bindm = SUPER, mouse:273, resizewindow
+
+bind = SUPER, TAB, cyclenext
+bind = SUPER SHIFT, TAB, focusurgentorlast
 
 # Workspace
 bind = SUPER, 1, workspace, 1
@@ -82,4 +86,4 @@ bind = SUPER, B, exec, firefox
 bind = SUPER, R, exec, wofi --show drun --insensitive --matching=fuzzy
 bind = SUPER ALT, R, exec, wofi --show run --insensitive --matching=fuzzy
 bind = SUPER, T, exec, qbittorrent
-bind = SUPER, V, exec, copyq menu
+bind = SUPER, V, exec, copyq show
