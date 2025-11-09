@@ -4,6 +4,8 @@
     ../clipboard.nix
     ../menu.nix
     ../notification.nix
+    ../polkit.nix
+    ../idle.nix
 
     # Binding Related
     ../browser.nix
@@ -27,7 +29,4 @@
 
   mine.de.idle.display = status:
     "hyprctl dispatch dpms ${if status then "on" else "off"}";
-
-  # Polkit Agent
-  services.hyprpolkitagent.enable = true;
 }

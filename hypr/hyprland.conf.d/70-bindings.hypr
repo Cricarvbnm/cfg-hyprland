@@ -86,8 +86,7 @@ bind = SUPER, return, exec, kitty
 bind = SUPER, E, exec, thunar
 bind = SUPER SHIFT, E, exec, thunar '$HOME/Desktop'
 bind = SUPER, B, exec, firefox
-bind = SUPER, R, exec, wofi --show drun --insensitive --matching=fuzzy
-bind = SUPER ALT, R, exec, wofi --show run --insensitive --matching=fuzzy
+bind = SUPER, R, exec, fuzzel
 bind = SUPER, T, exec, qbittorrent
 bind = SUPER, V, exec, copyq show
 
