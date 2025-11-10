@@ -78,8 +78,8 @@ bind = SUPER CTRL SHIFT, N, exec, swaync-client --close-all
 # Screenshot
 $hyprshot = hyprshot --output-folder $HOME/Pictures/screenshots
 
-bind = , print, exec, $hyprshot -m output
-bind = SHIFT, print, exec, $hyprshot -m region
+bind = CTRL, print, exec, $hyprshot -m output
+bind = , print, exec, $hyprshot -m region
 
 # Start App
 bind = SUPER, T, exec, kitty
