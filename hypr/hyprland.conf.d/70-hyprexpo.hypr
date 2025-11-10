@@ -1,1 +1,1 @@
-bind = SUPER, W, hyprexpo:expo, toggle
+bind = SUPER, O, hyprexpo:expo, toggle

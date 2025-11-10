@@ -1,16 +1,16 @@
 bind = CTRL ALT, delete, exit,
 bind = SUPER ALT, delete, exec, reboot
-bind = SUPER, semicolon, exec, hyprlock
+bind = SUPER ALT, L, exec, hyprlock
 
 # Window
 bind = SUPER, S, togglesplit, # dwindle
-bind = SUPER, F, togglefloating,
+bind = SUPER, V, togglefloating,
 
 bind = SUPER, P, pseudo, # dwindle
-bind = SUPER, X, fullscreen
+bind = SUPER SHIFT, F, fullscreen
 bind = , mouse:275, fullscreen
 
-bind = SUPER, C, killactive,
+bind = SUPER, Q, killactive,
 bind = , mouse:276, killactive,
 
 bind = SUPER, H, movefocus, l
@@ -18,10 +18,10 @@ bind = SUPER, L, movefocus, r
 bind = SUPER, K, movefocus, u
 bind = SUPER, J, movefocus, d
 
-bind = SUPER SHIFT, H, movewindow, l
-bind = SUPER SHIFT, L, movewindow, r
-bind = SUPER SHIFT, K, movewindow, u
-bind = SUPER SHIFT, J, movewindow, d
+bind = SUPER CTRL, H, movewindow, l
+bind = SUPER CTRL, L, movewindow, r
+bind = SUPER CTRL, K, movewindow, u
+bind = SUPER CTRL, J, movewindow, d
 bindm = SUPER, mouse:272, movewindow
 bindm = SUPER, mouse:273, resizewindow
 
@@ -41,26 +41,26 @@ bind = SUPER, 9, workspace, 9
 bind = SUPER ALT, Z, togglespecialworkspace, magic
 bind = SUPER, 0, workspace, emptym
 
-bind = SUPER, LEFT, workspace, m-1
-bind = SUPER, RIGHT, workspace, m+1
+bind = SUPER, U, workspace, m-1
+bind = SUPER, I, workspace, m+1
 
-bind = SUPER SHIFT, 1, movetoworkspace, 1
-bind = SUPER SHIFT, 2, movetoworkspace, 2
-bind = SUPER SHIFT, 3, movetoworkspace, 3
-bind = SUPER SHIFT, 4, movetoworkspace, 4
-bind = SUPER SHIFT, 5, movetoworkspace, 5
-bind = SUPER SHIFT, 6, movetoworkspace, 6
-bind = SUPER SHIFT, 7, movetoworkspace, 7
-bind = SUPER SHIFT, 8, movetoworkspace, 8
-bind = SUPER SHIFT, 9, movetoworkspace, 9
-bind = SUPER SHIFT, 0, movetoworkspace, emptym
+bind = SUPER CTRL, 1, movetoworkspace, 1
+bind = SUPER CTRL, 2, movetoworkspace, 2
+bind = SUPER CTRL, 3, movetoworkspace, 3
+bind = SUPER CTRL, 4, movetoworkspace, 4
+bind = SUPER CTRL, 5, movetoworkspace, 5
+bind = SUPER CTRL, 6, movetoworkspace, 6
+bind = SUPER CTRL, 7, movetoworkspace, 7
+bind = SUPER CTRL, 8, movetoworkspace, 8
+bind = SUPER CTRL, 9, movetoworkspace, 9
+bind = SUPER CTRL, 0, movetoworkspace, emptym
 
-bind = SUPER SHIFT, LEFT, movetoworkspace, m-1
-bind = SUPER SHIFT, RIGHT, movetoworkspace, m+1
+bind = SUPER CTRL, U, movetoworkspace, m-1
+bind = SUPER CTRL, I, movetoworkspace, m+1
 
 bind = SUPER, Z, movetoworkspacesilent, special:magic
 
-bind = SUPER, D, exec, $scriptDir/privacy-desktop
+bind = SUPER, X, exec, $scriptDir/privacy-desktop
 
 # Media
 bindel = ,XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
@@ -79,14 +79,13 @@ bind = SUPER CTRL SHIFT, N, exec, swaync-client --close-all
 $hyprshot = hyprshot --output-folder $HOME/Pictures/screenshots
 
 bind = , print, exec, $hyprshot -m output
-bind = SUPER, print, exec, $hyprshot -m region
+bind = SHIFT, print, exec, $hyprshot -m region
 
 # Start App
-bind = SUPER, return, exec, kitty
+bind = SUPER, T, exec, kitty
 bind = SUPER, E, exec, thunar
 bind = SUPER SHIFT, E, exec, thunar '$HOME/Desktop'
 bind = SUPER, B, exec, firefox
-bind = SUPER, R, exec, fuzzel
-bind = SUPER, T, exec, qbittorrent
-bind = SUPER, V, exec, copyq show
+bind = SUPER, D, exec, fuzzel
+bind = SUPER, A, exec, copyq show
 
