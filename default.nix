@@ -27,6 +27,8 @@
   xdg.configFile."hypr/hyprland.conf.d".source =
     config.lib.file.mkOutOfStoreSymlink ./hypr/hyprland.conf.d;
 
-  mine.de.idle.display = status:
-    "hyprctl dispatch dpms ${if status then "on" else "off"}";
+  mine.de.idle.displays = {
+    hyprland = status:
+      "hyprctl dispatch dpms ${if status then "on" else "off"}";
+  };
 }
